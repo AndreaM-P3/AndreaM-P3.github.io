@@ -154,6 +154,7 @@ i
     width: 650px;
     border-radius: 20px;
     background-color: #579c87;
+    margin-bottom: 150px;
 }
 
 span
@@ -169,11 +170,14 @@ footer
 {
     display: flex;
     justify-content: space-between;
+    width: 95%;
     margin-top: 85px;
     background-color: #579c87;
     border-top: solid 2px #a1c181;
     padding-left: 40px;
     padding-right: 40px;
+    position: fixed;
+    bottom: 0;
 }
 
 .pdp
@@ -182,9 +186,9 @@ footer
     font-family: Arial;
     font-size: 60px;
     color: #fdcb46;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
 
 @font-face
 {
