@@ -51,8 +51,8 @@ i
 {
     font-size: 75px;
     background: -webkit-linear-gradient(45deg, #f15861, #f78f6a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; /*limite les couleurs de BG au texte*/
+    -webkit-text-fill-color: transparent; /*rend le texte transparent de façon à voir le dégradé du BG limité au texte*/
     margin-top: 220px;
 }
 
@@ -113,8 +113,8 @@ i
     font-family: 'Qwigley';
     font-weight: bold;
     font-size: 70px;
-    background: -webkit-linear-gradient(5deg, #3d9339, #bfff7e);
-    -webkit-background-clip: text;
+    background: -webkit-linear-gradient(5deg, #3d9339, #bfff7e); 
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     margin: 280px 0px 50px;
 }
