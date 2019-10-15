@@ -1,0 +1,228 @@
+body
+{
+    max-width: 100%;
+}
+
+header
+{
+    background-color: #579c87;
+    background-position: top;
+    height: 200px;
+    border-bottom: solid 2px #a1c181;
+    padding-top: 40px;
+}
+
+section
+{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1
+{
+    color: #fdcb46;
+    font: 103px 'Arial Bold'; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu
+{
+    height: 760px;
+    width: 540px;
+    text-align: center;
+    margin-top: 100px;
+    box-shadow: 0px 0px 15px lightgrey;
+}
+
+.menul
+{
+    margin-right: 50px;
+}
+
+.menur
+{
+    margin-left: 50px;
+}
+
+i
+{
+    font-size: 75px;
+    background: -webkit-linear-gradient(45deg, #f15861, #f78f6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 220px;
+}
+
+.rest1
+{
+    color: #3c1218;
+    font-family: 'Allura';
+    font-size: 40px;
+   margin: 20px 0px;
+}
+
+.menu1
+{
+    color: #3c1218;
+    font-family: 'Action Man';
+    font-size: 65px;
+    margin: 10px 0px;
+}
+
+.rest2
+{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Cookie';
+    background: -webkit-linear-gradient(5deg, #d8852e, #905bfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 280px;
+}
+
+.menu2
+{
+    color: #c77412;
+    font-family: 'Georgia';
+    font-size: 55px;
+}
+
+.rest3
+{
+    font-family: 'Aguafina';
+    font-weight: bold;
+    font-size: 50px;
+    background: -webkit-linear-gradient(5deg, #0431df, #0887fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 280px;
+}
+
+.menu3
+{
+    color: #0887fb;
+    font-family: 'Marguerite';
+    font-size: 55px;
+}
+
+.rest4
+{
+    font-family: 'Qwigley';
+    font-weight: bold;
+    font-size: 70px;
+    background: -webkit-linear-gradient(5deg, #3d9339, #bfff7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 280px 0px 50px;
+}
+
+.menu4
+{
+    color: #3d9339;
+    font-family: 'Marguerite';
+    font-size: 55px;
+    margin: 45px 0px;
+}
+
+.fond1
+{
+    background-color: #fcdfdb;
+}
+
+.fond2
+{
+    background-color: #fff5fe ;
+}
+
+.fond3
+{
+    background-color: #f9f9f9 ;
+}
+
+.fond4
+{
+    background-color: #fdfffd ;
+}
+
+.next
+{
+    margin-top: 95px;
+    margin-left: 35%;
+    width: 650px;
+    border-radius: 20px;
+    background-color: #579c87;
+}
+
+span
+{
+    font-family: Arial;
+    font-size: 60px;
+    color: #fdcb46;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    background-color: #579c87;
+    border-top: solid 2px #a1c181;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.pdp
+{
+    text-align: center;
+    font-family: Arial;
+    font-size: 60px;
+    color: #fdcb46;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@font-face
+{
+    font-family: 'Arial Bold';
+    src: url('arialbd.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Allura';
+    src: url('Allura-Regular.otf') format('opentype');
+}
+@font-face
+{
+    font-family: 'Action Man';
+    src: url('Action_Man.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Cookie';
+    src: url('Cookie-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Georgia';
+    src: url('georgia.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Aguafina';
+    src: url('AguafinaScript-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Marguerite';
+    src: url('Marguerite.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Qwigley';
+    src: url('Qwigley-Regular.ttf') format('truetype');
+}
