@@ -47,7 +47,6 @@ i
 a
 {
     text-decoration: none;
-    padding-top: 0% auto;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -216,6 +215,25 @@ footer
     margin-top: 10px;
 }
 
+.pdp:hover
+{
+    animation: wiggle 200ms cubic-bezier(.4,.1,.6,.9);
+    animation-iteration-count: 2;
+}
+
+@keyframes wiggle
+{
+    25%
+    {
+        transform: translateX(2%);
+    }
+
+    75%
+    {
+        transform: translateX(-2%);
+    }
+}
+    
 @font-face
 {
     font-family: 'Arial Bold';
