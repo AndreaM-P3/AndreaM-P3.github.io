@@ -30,7 +30,7 @@ footer
     display: flex;
     justify-content: space-around;
     width: 95%;
-    height: 100px;
+    height: 60px;
     background-color: #579c87;
     border-top: solid 2px #a1c181;
 }
@@ -39,7 +39,7 @@ footer
 {
     text-align: center;
     font-family: Arial;
-    font-size: 30px;
+    font-size: 20px;
     color: #fdcb46;
     margin-top: 10px;
 }
@@ -231,6 +231,7 @@ h3
     {
         position: fixed;
         bottom: 0;
+        height: 80px;
     }
     .conclu
     {
@@ -281,6 +282,7 @@ h3
     {
         position: fixed;
         bottom: 0;
+        height: 100px;
     }
     .conclu
     {
@@ -331,6 +333,7 @@ h3
     {
         position: fixed;
         bottom: 0;
+        height: 100px;
     }
     .conclu
     {
