@@ -33,8 +33,6 @@ footer
     height: 100px;
     background-color: #579c87;
     border-top: solid 2px #a1c181;
-    position: fixed;
-    bottom: 0;
 }
 
 .pdp
@@ -94,7 +92,7 @@ footer
     font-family: 'Allura';
     font-size: 40px;
     margin-top: 10px;
-    margin-bottom: 90px;  
+    margin-bottom: 20px;  
     padding-left: 20px;
     font-weight: bold;
 }
@@ -137,7 +135,7 @@ h3
 
 .conclu
 {
-    padding-bottom: 200px;
+    padding-bottom: 60px;
     text-align: center;
     color: #3c1218;
     font-family: 'Allura';
@@ -229,6 +227,15 @@ h3
     {
         font-size: 35px;
     }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+    }
+    .conclu
+    {
+        padding-bottom: 160px;
+    }
 }
 
 /*grand écran*/
@@ -270,6 +277,15 @@ h3
     {
         font-size: 35px;
     }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+    }
+    .conclu
+    {
+        padding-bottom: 200px;
+    }
 }
 
 /* Très grand écran */
@@ -310,5 +326,14 @@ h3
     span
     {
         font-size: 35px;
+    }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+    }
+    .conclu
+    {
+        padding-bottom: 200px;
     }
 }

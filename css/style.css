@@ -8,7 +8,7 @@ header
     background-color: #579c87;
     background-position: top;
     width: 100%;
-    height: 200px;
+    height: 100px;
     border-bottom: solid 2px #a1c181;
     display: flex;
     justify-content: center;
@@ -19,19 +19,20 @@ section
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+    flex-direction: column;
 }
 
 h1
 {
     color: #fdcb46;
-    font: 65px 'Arial Bold'; 
+    font: 50px 'Arial Bold'; 
     margin: auto;   
 }
 
 .menu
 {
-    height: 760px;
-    width: 540px;
+    height: 500px;
+    width: 100%;
     text-align: center;
     margin-top: 80px;
     box-shadow: 0px 0px 15px lightgrey;
@@ -149,7 +150,7 @@ a
     height: 50px;
     border-radius: 20px;
     background-color: #579c87;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     margin-top: 30px;
     text-align: center;
  
@@ -200,18 +201,17 @@ footer
     display: flex;
     justify-content: space-around;
     width: 95%;
-    height: 100px;
+    height: 60px;
     background-color: #579c87;
     border-top: solid 2px #a1c181;
-    position: fixed;
-    bottom: 0;
+    
 }
 
 .pdp
 {
     text-align: center;
     font-family: Arial;
-    font-size: 30px;
+    font-size: 20px;
     color: #fdcb46;
     margin-top: 10px;
 }
@@ -283,9 +283,13 @@ footer
     {
         font-size: 30px;
     }
+    header
+    {
+        height: 100px;
+    }
     h1
     {
-        font: 75px 'Arial Bold';
+        font: 55px 'Arial Bold';
     }
     .next
     {
@@ -296,20 +300,37 @@ footer
     {
         font-size: 35px;
     }
+    footer
+    {
+        height: 70px;
+    }
 }
 
 /*tablette*/
 @media (min-width: 768px) 
 {
-  .pdp
-  {
-    font-size: 40px;
-  }
-  h1
-  {
+    section
+    {
+        flex-direction: row;
+    }
+    .pdp
+    {
+        font-size: 40px;
+    }
+    header
+    {
+        height: 200px;
+    }
+  .menu
+    {
+        height: 760px;
+        width: 540px;
+    }
+    h1
+    {
       font: 95px 'Arial Bold';
-  }
-  .next
+    }
+    .next
     {
         width: 400px;
         height: 60px;
@@ -319,15 +340,33 @@ footer
     {
         font-size: 35px;
     }
-
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+        height: 100px;
+    }
 }
 
 /*grand écran*/
 @media (min-width: 992px) 
 {
+    section
+    {
+        flex-direction: row;
+    }
     .pdp
     {
         font-size: 60px;
+    }
+    header
+    {
+        height: 200px;
+    }
+    .menu
+    {
+        height: 760px;
+        width: 540px;
     }
     h1
     {
@@ -341,15 +380,34 @@ footer
     span
     {
         font-size: 60px;
+    }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+        height: 100px;
     }
 }
 
 /* Très grand écran */
 @media (min-width: 1200px) 
 {
+    section
+    {
+        flex-direction: row;
+    }
     .pdp
     {
         font-size: 60px;
+    }
+    header
+    {
+        height: 200px;
+    }
+    .menu
+    {
+        height: 760px;
+        width: 540px;
     }
     h1
     {
@@ -363,5 +421,11 @@ footer
     span
     {
         font-size: 60px;
+    }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+        height: 100px;
     }
 }
