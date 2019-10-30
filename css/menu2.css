@@ -68,11 +68,6 @@ footer
     text-align: center;
 }
 
-.dessert
-{
-    margin-bottom: 120px;
-}
-
 h2
 {
     background: -webkit-linear-gradient(5deg, #c67412, #a56799, #6e4ccc);
@@ -81,7 +76,7 @@ h2
     font-family: 'Cookie';
     font-size: 80px;
     font-weight: bold;
-    padding-top: 190px;
+    padding-top: 100px;
     margin-top: 0px;
     padding-bottom: 30px;  
     margin-bottom: 0px;
@@ -116,8 +111,8 @@ h3
 
 .dessert
 {
+    margin-bottom: 50px;
     color: #6e4ccc;
-    margin-bottom: 300px;
 }
 
 .platprix
@@ -131,7 +126,6 @@ h3
 {
     max-width: 1190px;
     margin: 0 auto;
-
     background-color: #fff5fe;
 }
 
@@ -139,13 +133,11 @@ img
 {
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.miroir
-{
-    transform: scaleX(-1);
-}
-
+    width: 0px;
+    height: auto;
+    }
+}   
+   
 @font-face
 {
     font-family: 'Arial Bold';
@@ -177,22 +169,31 @@ img
     {
         font-size: 20px;
     }
+    img
+    {
+        width: 0px;
+        height: auto;
+    }
 }
 
 /*tablette*/
 @media (min-width: 768px) 
 {
-  .pdp
-  {
-    font-size: 40px;
-  }
-  h1
-  {
-      font: 95px 'Arial Bold';
-  }
+    .pdp
+    {
+        font-size: 40px;
+    }
+    h1
+    {
+        font: 95px 'Arial Bold';
+    }
     .platprix
     {
         padding: 10px 10px;
+    }
+    .dessert
+    {
+        margin-bottom: 150px;
     }
     span
     {
@@ -205,6 +206,11 @@ img
         left: 0;
         height: 80px;
         width: 100%
+    }
+    img
+    {
+        width: 0px;
+        height: auto;
     }
 }
 
@@ -219,9 +225,17 @@ img
     {
         font: 103px 'Arial Bold';
     }
+    h2
+    {
+        padding-top: 190px;
+    }
     .platprix
     {
         padding: 10px 120px;
+    }
+    .dessert
+    {
+        margin-bottom: 300px;
     }
     span
     {
@@ -234,6 +248,15 @@ img
         left: 0;
         height: 100px;
         width: 100%;
+    }
+    img
+    {
+        width: 250px;
+        height: auto;
+    }
+    .miroir
+    {
+        transform: scaleX(-1);
     }
 }
 
@@ -248,9 +271,17 @@ img
     {
         font: 103px 'Arial Bold';
     }
+    h2
+    {
+        padding-top: 190px;
+    }
     .platprix
     {
         padding: 10px 120px;
+    }
+    .dessert
+    {
+        margin-bottom: 300px;
     }
     span
     {
@@ -263,5 +294,14 @@ img
         left: 0;
         height: 100px;
         width: 100%;
+    }
+    img
+    {
+        width: 336px;
+        height: auto;
+    }
+    .miroir
+    {
+        transform: scaleX(-1);
     }
 }
