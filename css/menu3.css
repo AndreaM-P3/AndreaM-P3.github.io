@@ -70,49 +70,39 @@ footer
 
 h2
 {
-    background: -webkit-linear-gradient(5deg, #c67412, #a56799, #6e4ccc);
+    background: -webkit-linear-gradient(5deg, #0228dd, #0670f3, #229df9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Cookie';
-    font-size: 80px;
-    font-weight: bold;
-    padding-top: 100px;
+    font-family: 'Aguafina';
+    font-size: 50px;
+    padding-top: 70px;
     margin-top: 0px;
     padding-bottom: 30px;  
     margin-bottom: 0px;
+    font-weight: normal;
 }
 
 span
 {
-    font-family: 'Georgia';
-    font-size: 15px;
+    font-family: 'Marguerite';
+    font-size: 20px;
     line-height: 25px;
 }
 
 h3
 {
-    font-family: 'Georgia';
+    font-family: 'Marguerite';
     font-size: 35px;
     text-align: center;
     margin-top: 0px;
     position: relative;
-    padding-top: 130px;
-}
-
-.entrée
-{
-    color: #c67412;
-}
-
-.plat
-{
-    color: #a56799;
+    padding-top: 60px;
+    font-weight: normal;
 }
 
 .dessert
 {
     padding-bottom: 50px;
-    color: #6e4ccc;
 }
 
 .platprix
@@ -126,7 +116,7 @@ h3
 {
     max-width: 1190px;
     margin: 0 auto;
-    background-color: #fff5fe;
+    background-color: #edefef;
 }
 
 img
@@ -145,13 +135,13 @@ img
 }
 @font-face
 {
-    font-family: 'Cookie';
-    src: url('Cookie-Regular.ttf') format('truetype');
+    font-family: 'Aguafina';
+    src: url('AguafinaScript-Regular.ttf') format('truetype');
 }
 @font-face
 {
-    font-family: 'Georgia';
-    src: url('georgia.ttf') format('truetype');
+    font-family: 'Marguerite';
+    src: url('Marguerite.ttf') format('truetype');
 }
 
 /*smartphone*/
@@ -164,6 +154,10 @@ img
     h1
     {
         font: 75px 'Arial Bold';
+    }
+    h2
+    {
+        font-size: 60px;
     }
     span
     {
@@ -186,6 +180,14 @@ img
     h1
     {
         font: 95px 'Arial Bold';
+    }
+    h2
+    {
+        font-size: 100px;
+    }
+    h3
+    {
+        padding-top: 70px;
     }
     .platprix
     {
@@ -228,6 +230,11 @@ img
     h2
     {
         padding-top: 190px;
+        font-size: 100px;
+    }
+    h3
+    {
+        padding-top: 130px;
     }
     .platprix
     {
@@ -274,6 +281,11 @@ img
     h2
     {
         padding-top: 190px;
+        font-size: 100px;
+    }
+    h3
+    {
+        padding-top: 130px;
     }
     .platprix
     {
