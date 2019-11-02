@@ -3,16 +3,24 @@ header
     background-color: #579c87;
     background-position: top;
     width: 100%;
-    height: 200px;
+    height: 120px;
     border-bottom: solid 2px #a1c181;
     display: flex;
     justify-content: center;
 }
 
+.logo
+{
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+}
+
 h1
 {
     color: #fdcb46;
-    font: 65px 'Arial Bold'; 
+    font-size: 50px;
+    font-family: 'Arial Bold'; 
     margin: auto;   
 }
 
@@ -214,6 +222,15 @@ img
         width: 0px;
         height: auto;
     }
+    header
+    {
+        height: 220px;
+    }
+    .logo
+    {
+        width: 150px;
+        height: auto;
+    }
 }
 
 /*grand écran*/
@@ -265,6 +282,15 @@ img
     {
         transform: scaleX(-1);
     }
+    header
+    {
+        height: 260px;
+    }
+    .logo
+    {
+        width: 200px;
+        height: auto;
+    }
 }
 
 /* Très grand écran */
@@ -315,5 +341,14 @@ img
     .miroir
     {
         transform: scaleX(-1);
+    }
+    header
+    {
+        height: 300px;
+    }
+    .logo
+    {
+        width: 240px;
+        height: auto;
     }
 }

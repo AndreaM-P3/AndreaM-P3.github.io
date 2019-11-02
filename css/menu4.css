@@ -3,16 +3,24 @@ header
     background-color: #579c87;
     background-position: top;
     width: 100%;
-    height: 200px;
+    height: 120px;
     border-bottom: solid 2px #a1c181;
     display: flex;
     justify-content: center;
 }
 
+.logo
+{
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+}
+
 h1
 {
     color: #fdcb46;
-    font: 65px 'Arial Bold'; 
+    font-size: 50px;
+    font-family: 'Arial Bold'; 
     margin: auto;   
 }
 
@@ -178,6 +186,10 @@ img
     {
         font-size: 40px;
     }
+    header
+    {
+        height: 220px;
+    }
     h1
     {
         font: 95px 'Arial Bold';
@@ -215,6 +227,11 @@ img
         width: 0px;
         height: auto;
     }
+    .logo
+    {
+        width: 150px;
+        height: auto;
+    }
 }
 
 /*grand écran*/
@@ -223,6 +240,10 @@ img
     .pdp
     {
         font-size: 60px;
+    }
+    header
+    {
+        height: 260px;
     }
     h1
     {
@@ -266,6 +287,11 @@ img
     {
         transform: scaleX(-1);
     }
+    .logo
+    {
+        width: 200px;
+        height: auto;
+    }
 }
 
 /* Très grand écran */
@@ -274,6 +300,10 @@ img
     .pdp
     {
         font-size: 60px;
+    }
+    header
+    {
+        height: 300px;
     }
     h1
     {
@@ -316,5 +346,10 @@ img
     .miroir
     {
         transform: scaleX(-1);
+    }
+    .logo
+    {
+        width: 240px;
+        height: auto;
     }
 }
