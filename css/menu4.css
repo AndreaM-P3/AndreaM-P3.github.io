@@ -1,0 +1,355 @@
+header
+{
+    background-color: #579c87;
+    background-position: top;
+    width: 100%;
+    height: 120px;
+    border-bottom: solid 2px #a1c181;
+    display: flex;
+    justify-content: center;
+}
+
+.logo
+{
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+}
+
+h1
+{
+    color: #fdcb46;
+    font-size: 50px;
+    font-family: 'Arial Bold'; 
+    margin: auto;   
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    background-color: #579c87;
+    border-top: solid 2px #a1c181;
+}
+
+.pdp
+{
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    color: #fdcb46;
+    margin-top: 10px;
+}
+
+.pdp:hover
+{
+    animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9);
+    animation-iteration-count: 2;
+}
+
+@keyframes wiggle
+{
+    25%
+    {
+        transform: translateX(1%);
+    }
+
+    75%
+    {
+        transform: translateX(-1%);
+    }
+}
+
+.restaurant
+{
+    text-align: center;
+}
+
+h2
+{
+    background: -webkit-linear-gradient(5deg, #3d923a, #99e06b, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Qwigley';
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 50px;
+    margin-top: 0px;
+    padding-bottom: 10px;  
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+span
+{
+    font-family: 'Marguerite';
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h3
+{
+    font-family: 'Marguerite';
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+    padding-top: 60px;
+    font-weight: normal;
+}
+
+.dessert
+{
+    padding-bottom: 50px;
+}
+
+.platprix
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.bloc_menu
+{
+    max-width: 1190px;
+    margin: 0 auto;
+    background-color: #edefef;
+}
+
+img
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 0px;
+    height: auto;
+    }
+}   
+   
+@font-face
+{
+    font-family: 'Arial Bold';
+    src: url('arialbd.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Qwigley';
+    src: url('Qwigley-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Marguerite';
+    src: url('Marguerite.ttf') format('truetype');
+}
+
+/*smartphone*/
+@media (min-width: 576px) 
+{
+    .pdp
+    {
+        font-size: 30px;
+    }
+    h1
+    {
+        font: 75px 'Arial Bold';
+    }
+    h2
+    {
+        font-size: 80px;
+    }
+    span
+    {
+        font-size: 15px;
+    }
+    img
+    {
+        width: 0px;
+        height: auto;
+    }
+}
+
+/*tablette*/
+@media (min-width: 768px) 
+{
+    .pdp
+    {
+        font-size: 40px;
+    }
+    header
+    {
+        height: 220px;
+    }
+    h1
+    {
+        font: 95px 'Arial Bold';
+    }
+    h2
+    {
+        font-size: 100px;
+    }
+    h3
+    {
+        padding-top: 70px;
+    }
+    .platprix
+    {
+        padding: 10px 10px;
+    }
+    .dessert
+    {
+        padding-bottom: 150px;
+    }
+    span
+    {
+        font-size: 25px;
+    }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 80px;
+        width: 100%
+    }
+    img
+    {
+        width: 0px;
+        height: auto;
+    }
+    .logo
+    {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/*grand écran*/
+@media (min-width: 992px) 
+{
+    .pdp
+    {
+        font-size: 60px;
+    }
+    header
+    {
+        height: 260px;
+    }
+    h1
+    {
+        font: 103px 'Arial Bold';
+    }
+    h2
+    {
+        padding-top: 160px;
+        font-size: 120px;
+    }
+    h3
+    {
+        padding-top: 130px;
+    }
+    .platprix
+    {
+        padding: 10px 120px;
+    }
+    .dessert
+    {
+        padding-bottom: 300px;
+    }
+    span
+    {
+        font-size: 25px;
+    }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+    }
+    img
+    {
+        width: 250px;
+        height: auto;
+    }
+    .miroir
+    {
+        transform: scaleX(-1);
+    }
+    .logo
+    {
+        width: 200px;
+        height: auto;
+    }
+}
+
+/* Très grand écran */
+@media (min-width: 1200px) 
+{
+    .pdp
+    {
+        font-size: 60px;
+    }
+    header
+    {
+        height: 300px;
+    }
+    h1
+    {
+        font: 103px 'Arial Bold';
+    }
+    h2
+    {
+        padding-top: 160px;
+        font-size: 140px;
+    }
+    h3
+    {
+        padding-top: 130px;
+    }
+    .platprix
+    {
+        padding: 10px 120px;
+    }
+    .dessert
+    {
+        padding-bottom: 300px;
+    }
+    span
+    {
+        font-size: 25px;
+    }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+    }
+    img
+    {
+        width: 336px;
+        height: auto;
+    }
+    .miroir
+    {
+        transform: scaleX(-1);
+    }
+    .logo
+    {
+        width: 240px;
+        height: auto;
+    }
+}
