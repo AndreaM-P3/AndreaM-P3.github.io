@@ -3,17 +3,19 @@ header
     background-color: #579c87;
     background-position: top;
     width: 100%;
-    height: 120px;
+    height: 130px;
     border-bottom: solid 2px #a1c181;
     display: flex;
     justify-content: center;
 }
 
-.logo
+.icon-logo_omf-6
 {
-    margin: 0 auto;
-    width: 80px;
-    height: auto;
+    text-align: center;
+    font-size: 60px;
+    background: -webkit-linear-gradient(15deg, #dd9ea2, #efe9ca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1
@@ -37,10 +39,13 @@ footer
 {
     display: flex;
     justify-content: space-around;
+    position: fixed;
     width: 100%;
-    height: 60px;
+    height: 30px;
     background-color: #579c87;
     border-top: solid 2px #a1c181;
+    bottom: 0;
+    left: 0;
 }
 
 .pdp
@@ -49,12 +54,12 @@ footer
     font-family: Arial;
     font-size: 20px;
     color: #fdcb46;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .pdp:hover
 {
-    animation: wiggle 200ms cubic-bezier(.4,.1,.6,.9);
+    animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9);
     animation-iteration-count: 2;
 }
 
@@ -62,12 +67,12 @@ footer
 {
     25%
     {
-        transform: translateX(2%);
+        transform: translateX(1%);
     }
 
     75%
     {
-        transform: translateX(-2%);
+        transform: translateX(-1%);
     }
 }
 
@@ -103,9 +108,11 @@ h3
     font-size: 35px;
     text-align: center;
     margin-top: 0px;
-    position: relative;
     padding-top: 60px;
     font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .dessert
@@ -155,26 +162,17 @@ img
 /*smartphone*/
 @media (min-width: 576px) 
 {
-    .pdp
+    header
     {
-        font-size: 30px;
+        height: 140px;
     }
     h1
     {
-        font: 75px 'Arial Bold';
+        font-size: 75px;
     }
     h2
     {
         font-size: 60px;
-    }
-    span
-    {
-        font-size: 20px;
-    }
-    img
-    {
-        width: 0px;
-        height: auto;
     }
 }
 
@@ -187,7 +185,7 @@ img
     }
     h1
     {
-        font: 95px 'Arial Bold';
+        font-size: 95px;
     }
     h2
     {
@@ -211,27 +209,16 @@ img
     }
     footer
     {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 80px;
-        width: 100%
-    }
-    img
-    {
-        width: 0px;
-        height: auto;
+        height: 60px;
     }
     header
     {
         height: 220px;
     }
-    .logo
+    .icon-logo_omf-6
     {
-        width: 150px;
-        height: auto;
+        font-size: 100px;
     }
-}
 
 /*grand écran*/
 @media (min-width: 992px) 
@@ -239,10 +226,11 @@ img
     .pdp
     {
         font-size: 60px;
+        margin-top: 15px;
     }
     h1
     {
-        font: 103px 'Arial Bold';
+        font-size: 103px;
     }
     h2
     {
@@ -261,94 +249,57 @@ img
     {
         padding-bottom: 300px;
     }
-    span
-    {
-        font-size: 25px;
-    }
     footer
     {
-        position: fixed;
-        bottom: 0;
-        left: 0;
         height: 100px;
-        width: 100%;
     }
     img
     {
         width: 250px;
-        height: auto;
+        height: 17px;
+        margin-top: 20px;
     }
     .miroir
     {
         transform: scaleX(-1);
+        margin-right: 80px;
+    }
+    .left
+    {
+        margin-left: 80px;
     }
     header
     {
         height: 260px;
     }
-    .logo
+    .icon-logo_omf-6
     {
-        width: 200px;
-        height: auto;
+        font-size: 130px;
     }
 }
 
 /* Très grand écran */
 @media (min-width: 1200px) 
 {
-    .pdp
-    {
-        font-size: 60px;
-    }
-    h1
-    {
-        font: 103px 'Arial Bold';
-    }
-    h2
-    {
-        padding-top: 190px;
-        font-size: 100px;
-    }
-    h3
-    {
-        padding-top: 130px;
-    }
-    .platprix
-    {
-        padding: 10px 120px;
-    }
-    .dessert
-    {
-        padding-bottom: 300px;
-    }
-    span
-    {
-        font-size: 25px;
-    }
-    footer
-    {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 100px;
-        width: 100%;
-    }
     img
     {
-        width: 336px;
-        height: auto;
+        width: 346px;
+        height: 20px;
+    }
+    .left
+    {
+        margin-left: 70px;
     }
     .miroir
     {
-        transform: scaleX(-1);
+        margin-right: 70px;
     }
     header
     {
         height: 300px;
     }
-    .logo
+    .icon-logo_omf-6
     {
-        width: 240px;
-        height: auto;
+        font-size: 160px;
     }
 }
