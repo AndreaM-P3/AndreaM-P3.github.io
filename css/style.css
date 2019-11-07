@@ -7,11 +7,6 @@ header
 {
     background-color: #579c87;
     background-position: top;
-<<<<<<< Updated upstream
-    height: 200px;
-    border-bottom: solid 2px #a1c181;
-    padding-top: 40px;
-=======
     width: 100%;
     height: 130px;
     border-bottom: solid 2px #a1c181;
@@ -19,58 +14,56 @@ header
     justify-content: center;
 }
 
-.icon-logo_omf
+.icon-logo_omf-6
 {
     text-align: center;
     font-size: 60px;
     background: -webkit-linear-gradient(15deg, #dd9ea2, #efe9ca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
->>>>>>> Stashed changes
 }
+
 
 section
 {
     display: flex;
     justify-content: space-around;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 auto;
+    flex-direction: column;
 }
 
 h1
 {
     color: #fdcb46;
-    font: 103px 'Arial Bold'; 
-    text-align: center;
-    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Arial Bold'; 
+    margin: auto;   
 }
 
 .menu
 {
-    height: 760px;
-    width: 540px;
+    height: 500px;
+    width: 100%;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
     box-shadow: 0px 0px 15px lightgrey;
 }
 
-.menul
+.icon-note-3
 {
-    margin-right: 50px;
-}
-
-.menur
-{
-    margin-left: 50px;
-}
-
-i
-{
-    font-size: 75px;
-    background: -webkit-linear-gradient(45deg, #f15861, #f78f6a);
+    font-size: 85px;
+    background: -webkit-linear-gradient(45deg, #f15861, #f78f6a, #fcb977);
     -webkit-background-clip: text; /*limite les couleurs de BG au texte*/
     -webkit-text-fill-color: transparent; /*rend le texte transparent de façon à voir le dégradé du BG limité au texte*/
-    margin-top: 220px;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .rest1
@@ -78,7 +71,6 @@ i
     color: #3c1218;
     font-family: 'Allura';
     font-size: 40px;
-   margin: 20px 0px;
 }
 
 .menu1
@@ -86,7 +78,6 @@ i
     color: #3c1218;
     font-family: 'Action Man';
     font-size: 65px;
-    margin: 10px 0px;
 }
 
 .rest2
@@ -94,10 +85,9 @@ i
     font-size: 50px;
     font-weight: bold;
     font-family: 'Cookie';
-    background: -webkit-linear-gradient(5deg, #d8852e, #905bfd);
+    background: -webkit-linear-gradient(35deg, #c67412, #a56799, #6e4ccc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 280px;
 }
 
 .menu2
@@ -110,12 +100,10 @@ i
 .rest3
 {
     font-family: 'Aguafina';
-    font-weight: bold;
     font-size: 50px;
-    background: -webkit-linear-gradient(5deg, #0431df, #0887fb);
+    background: -webkit-linear-gradient(5deg, #0228dd, #0670f3, #229df9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 280px;
 }
 
 .menu3
@@ -133,7 +121,6 @@ i
     background: -webkit-linear-gradient(5deg, #3d9339, #bfff7e); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
-    margin: 280px 0px 50px;
 }
 
 .menu4
@@ -141,7 +128,6 @@ i
     color: #3d9339;
     font-family: 'Marguerite';
     font-size: 55px;
-    margin: 45px 0px;
 }
 
 .fond1
@@ -166,44 +152,62 @@ i
 
 .next
 {
-    margin-top: 95px;
-    margin-left: 35%;
-    width: 650px;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 350px;
+    height: 50px;
     border-radius: 20px;
     background-color: #579c87;
-<<<<<<< Updated upstream
-    margin-bottom: 150px;
-=======
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: 30px;
     text-align: center;
  
->>>>>>> Stashed changes
 }
 
 span
 {
     font-family: Arial;
-    font-size: 60px;
+    font-size: 30px;
     color: #fdcb46;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 10px;
+}
+
+.suspens
+{
+    animation: points 700ms backwards infinite ease-in-out alternate
+}
+
+.pt1
+{
+    animation-delay: 200ms;
+}
+
+.pt2
+{
+    animation-delay: 400ms;
+}
+
+.pt3
+{
+    animation-delay: 600ms;
+}
+
+@keyframes points
+{
+    0%
+    {
+        transform: translateY(0)
+    }
+    100%
+    {
+        transform: translateY(-10px)
+    }
 }
 
 footer
 {
     display: flex;
-<<<<<<< Updated upstream
-    justify-content: space-between;
-    width: 95%;
-    margin-top: 85px;
-    background-color: #579c87;
-    border-top: solid 2px #a1c181;
-    padding-left: 40px;
-    padding-right: 40px;
-    position: fixed;
-    bottom: 0;
-=======
     justify-content: space-around;
     position: fixed;
     width: 100%;
@@ -212,27 +216,20 @@ footer
     border-top: solid 2px #a1c181;
     bottom: 0;
     left: 0;
->>>>>>> Stashed changes
 }
 
 .pdp
 {
     text-align: center;
     font-family: Arial;
-    font-size: 60px;
+    font-size: 20px;
     color: #fdcb46;
-<<<<<<< Updated upstream
-    margin-top: 20px;
-    margin-bottom: 20px;
-    }
-
-=======
     margin-top: 5px;
 }
 
 .pdp:hover
 {
-    animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9);
+    animation: wiggle 200ms cubic-bezier(.4,.1,.6,.9);
     animation-iteration-count: 2;
 }
 
@@ -240,16 +237,15 @@ footer
 {
     25%
     {
-        transform: translateX(1%);
+        transform: translateX(2%);
     }
 
     75%
     {
-        transform: translateX(-1%);
+        transform: translateX(-2%);
     }
 }
     
->>>>>>> Stashed changes
 @font-face
 {
     font-family: 'Arial Bold';
@@ -289,30 +285,40 @@ footer
 {
     font-family: 'Qwigley';
     src: url('Qwigley-Regular.ttf') format('truetype');
-<<<<<<< Updated upstream
-=======
 }
 
 /*smartphone*/
 @media (min-width: 576px) 
 {
+    .pdp
+    {
+        font-size: 30px;
+    }
     header
     {
-        height: 140px;
+        height: 100px;
     }
     h1
     {
-        font-size: 55px;
+        font: 55px 'Arial Bold';
     }
     .next
     {
         width: 400px;
         height: 60px;
-        margin-bottom: 50px;
     }
     span
     {
         font-size: 35px;
+    }
+    footer
+    {
+        height: 70px;
+    }
+    img
+    {
+        width: 100px;
+        height: auto;
     }
 }
 
@@ -338,19 +344,17 @@ footer
     }
     h1
     {
-      font: 95px 'Arial Bold';
+      font-size: 95px;
     }
     .next
     {
-        width: 400px;
-        height: 60px;
         margin-bottom: 120px;
     }
     footer
     {
-        height: 100px;
+        height: 60px;
     }
-    .icon-logo_omf
+    .icon-logo_omf-6
     {
         font-size: 100px;
     }
@@ -380,7 +384,7 @@ footer
     {
         font-size: 60px;
     }
-    .icon-logo_omf
+    .icon-logo_omf-6
     {
         font-size: 130px;
     }
@@ -393,9 +397,8 @@ footer
     {
         height: 300px;
     }
-    .icon-logo_omf
+    .icon-logo_omf-6
     {
         font-size: 160px;
     }
->>>>>>> Stashed changes
 }

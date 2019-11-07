@@ -9,7 +9,7 @@ header
     justify-content: center;
 }
 
-.icon-logo_omf
+.icon-logo_omf-6
 {
     text-align: center;
     font-size: 60px;
@@ -108,8 +108,10 @@ h3
     font-size: 35px;
     text-align: center;
     margin-top: 0px;
-    position: relative;
     padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .entrée
@@ -144,11 +146,8 @@ h3
 
 img
 {
-    padding-left: 15px;
-    padding-right: 15px;
     width: 0px;
     height: auto;
-    }
 }   
    
 @font-face
@@ -190,11 +189,10 @@ img
     .pdp
     {
         font-size: 40px;
-        margin-top: 30px;
     }
     h1
     {
-        font: 95px 'Arial Bold';
+        font-size: 95px;
     }
     .platprix
     {
@@ -210,13 +208,13 @@ img
     }
     footer
     {
-        height: 80px;
+        height: 60px;
     }
     header
     {
         height: 220px;
     }
-    .icon-logo_omf
+    .icon-logo_omf-6
     {
         font-size: 100px;
     }
@@ -261,9 +259,18 @@ img
     img
     {
         width: 250px;
-        height: auto;
+        height: 18px;
+        margin-top: 13px;
     }
-    .icon-logo_omf
+    .left
+    {
+        margin-left: 55px;
+    }
+    .miroir
+    {
+        margin-right: 55px;
+    }
+    .icon-logo_omf-6
     {
         font-size: 130px;
     }
@@ -279,9 +286,18 @@ img
     img
     {
         width: 336px;
-        height: auto;
+        height: 22px;
+        margin-top: 10px;
     }
-    .icon-logo_omf
+    .left
+    {
+        margin-left: 55px;
+    }
+    .miroir
+    {
+        margin-right: 55px;
+    }
+    .icon-logo_omf-6
     {
         font-size: 160px;
     }

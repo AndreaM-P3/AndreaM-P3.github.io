@@ -14,7 +14,7 @@ header
     justify-content: center;
 }
 
-.icon-logo_omf
+.icon-logo_omf-6
 {
     text-align: center;
     font-size: 60px;
@@ -115,6 +115,11 @@ footer
     font-family: 'Arial Bold';
     src: url('arialbd.ttf') format('truetype');
 }
+@font-face
+{
+    font-family: 'logo';
+    src: url('sfgj9-ua8l9.ttf') format('truetype');
+}
 
 /*smartphone*/
 @media (min-width: 576px) 
@@ -165,7 +170,7 @@ footer
     {
         margin: 40px 60px;
     }
-    .icon-logo_omf
+    .icon-logo_omf-6
     {
         font-size: 100px;
     }
@@ -199,7 +204,7 @@ footer
     {
         margin: 60px 80px;
     }
-    .icon-logo_omf
+    .icon-logo_omf-6
     {
         font-size: 130px;
     }
@@ -216,7 +221,7 @@ footer
     {
         margin: 80px 100px;
     }
-    .icon-logo_omf
+    .icon-logo_omf-6
     {
         font-size: 160px;
     }
