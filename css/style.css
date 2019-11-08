@@ -70,14 +70,14 @@ a
 {
     color: #3c1218;
     font-family: 'Allura';
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .menu1
 {
     color: #3c1218;
     font-family: 'Action Man';
-    font-size: 65px;
+    font-size: 50px;
 }
 
 .rest2
@@ -135,9 +135,29 @@ a
     background-color: #fcdfdb;
 }
 
+.fond1:hover
+{
+    animation: opacity 900ms ease-in-out forwards;
+}
+
+.zoom1:hover span
+{
+    animation: textanim 500ms ease-in-out forwards;
+}
+
 .fond2
 {
     background-color: #fff5fe ;
+}
+
+.fond2:hover
+{
+    animation: opacity 900ms ease-in-out forwards;
+}
+
+.zoom2:hover span
+{
+    animation: textanim 500ms ease-in-out forwards;
 }
 
 .fond3
@@ -145,9 +165,29 @@ a
     background-color: #f9f9f9 ;
 }
 
+.fond3:hover
+{
+    animation: opacity 900ms ease-in-out forwards;
+}
+
+.zoom3:hover span
+{
+    animation: textanim 500ms ease-in-out forwards;
+}
+
 .fond4
 {
-    background-color: #fdfffd ;
+    background-color: #fdfffd ; 
+}
+
+.fond4:hover
+{
+    animation: opacity 900ms ease-in-out forwards;
+}
+
+.zoom4:hover span
+{
+    animation: textanim 500ms ease-in-out forwards;
 }
 
 .next
@@ -175,7 +215,7 @@ span
 
 .suspens
 {
-    animation: points 700ms backwards infinite ease-in-out alternate
+    animation: points 700ms backwards infinite ease-in-out alternate;
 }
 
 .pt1
@@ -191,6 +231,34 @@ span
 .pt3
 {
     animation-delay: 600ms;
+}
+
+@keyframes opacity 
+{
+    from 
+    {
+      opacity: 1;
+    }
+    to 
+    {
+      opacity: 0.5;
+    }
+}
+
+@keyframes textanim 
+{
+    from 
+    {
+      font-size: 280%;
+    }
+    50% 
+    {
+      font-size: 300%;
+    }
+    to 
+    {
+      font-size: 320%;
+    }
 }
 
 @keyframes points

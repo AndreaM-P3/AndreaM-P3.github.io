@@ -140,8 +140,31 @@ img
     padding-right: 15px;
     width: 0px;
     height: auto;
+}  
+
+@keyframes underline
+{
+    0%
+    {
+        transform: scaleX(0)
     }
-}   
+    25%
+    {
+        transform: scaleX(.25)
+    }
+    50%
+    {
+        transform: scaleX(.5)
+    }
+    75%
+    {
+        transform: scaleX(.75)
+    }
+    100%
+    {
+        transform: scaleX(1)
+    }
+}
    
 @font-face
 {
@@ -276,6 +299,57 @@ img
     {
         font-size: 130px;
     }
+    .entrée
+    {
+        position: relative;
+    }
+    .entrée:hover .underline1
+    {
+        content:"";
+        position: absolute;
+        top: 185px;
+        left: 40%;
+        background: #0228dd;
+        width: 245px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms both ;
+    }
+    .plat
+    {
+        position: relative;
+    }
+    .plat:hover .underline2
+    {
+        content:"";
+        position: absolute;
+        top: 185px;
+        left: 41%;
+        background: #0670f3;
+        width: 220px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms both ;
+    }
+    .dessert
+    {
+        position: relative;
+    }
+    .dessert:hover .underline3
+    {
+        content:"";
+        position: absolute;
+        top: 185px;
+        left: 41%;
+        background: #229df9;
+        width: 220px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms both ;
+    }
 }
 
 /* Très grand écran */
@@ -302,4 +376,8 @@ img
     {
         font-size: 160px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> animation

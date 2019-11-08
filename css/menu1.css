@@ -140,6 +140,33 @@ h3
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
+=======
+@keyframes underline
+{
+    0%
+    {
+        transform: scaleX(0)
+    }
+    25%
+    {
+        transform: scaleX(.25)
+    }
+    50%
+    {
+        transform: scaleX(.5)
+    }
+    75%
+    {
+        transform: scaleX(.75)
+    }
+    100%
+    {
+        transform: scaleX(1)
+    }
+}
+
+>>>>>>> animation
 .platprix
 {
     display: flex;
@@ -290,6 +317,60 @@ img
         margin-top: 25px;
         width: 250px;
     }
+<<<<<<< HEAD
+=======
+    .entrée
+    {
+        position: relative;
+    }
+    .entrée:hover .underline1
+    {
+        content:"";
+        position: absolute;
+        top: 60px;
+        left: 41%;
+        background: #3c1218;
+        width: 190px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms both ;
+    }
+    .plat
+    {
+        position: relative;
+    }
+    .plat:hover .underline2
+    {
+        content:"";
+        position: absolute;
+        top: 60px;
+        left: 36%;
+        background: #3c1218;
+        width: 300px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms both ;
+    }
+    .dessert
+    {
+        position: relative;
+    }
+    .dessert:hover .underline3
+    {
+        content:"";
+        position: absolute;
+        top: 60px;
+        left: 34%;
+        background: #3c1218;
+        width: 350px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms both ;
+    }
+>>>>>>> animation
 }
 
 /* Très grand écran */
