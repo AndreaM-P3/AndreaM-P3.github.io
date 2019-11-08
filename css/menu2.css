@@ -149,8 +149,6 @@ img
     width: 0px;
     height: auto;
 }   
-<<<<<<< HEAD
-=======
 
 @keyframes underline
 {
@@ -175,7 +173,6 @@ img
         transform: scaleX(1)
     }
 }
->>>>>>> animation
    
 @font-face
 {
@@ -301,8 +298,6 @@ img
     {
         font-size: 130px;
     }
-<<<<<<< HEAD
-=======
     .entrée
     {
         position: relative;
@@ -354,7 +349,6 @@ img
         transform-origin: left; 
         animation: underline 1000ms 150ms both ;
     }
->>>>>>> animation
 }
 
 /* Très grand écran */
