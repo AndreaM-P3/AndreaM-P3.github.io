@@ -17,6 +17,7 @@ header
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 h1
 {
     color: #fdcb46;
@@ -82,42 +83,51 @@ footer
 
 h2
 {
-    background: -webkit-linear-gradient(5deg, #3d923a, #99e06b, #beff7f);
+    background: -webkit-linear-gradient(5deg, #c67412, #a56799, #6e4ccc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Qwigley';
-    font-size: 70px;
+    font-family: 'Cookie';
+    font-size: 80px;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 100px;
     margin-top: 0px;
-    padding-bottom: 10px;  
+    padding-bottom: 30px;  
     margin-bottom: 0px;
-    font-weight: normal;
 }
 
 span
 {
-    font-family: 'Marguerite';
-    font-size: 18px;
+    font-family: 'Georgia';
+    font-size: 15px;
     line-height: 25px;
 }
 
 h3
 {
-    font-family: 'Marguerite';
+    font-family: 'Georgia';
     font-size: 35px;
     text-align: center;
     margin-top: 0px;
-    padding-top: 60px;
-    font-weight: normal;
+    padding-top: 130px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.entrée
+{
+    color: #c67412;
+}
+
+.plat
+{
+    color: #a56799;
+}
+
 .dessert
 {
     padding-bottom: 50px;
+    color: #6e4ccc;
 }
 
 .platprix
@@ -131,16 +141,14 @@ h3
 {
     max-width: 1190px;
     margin: 0 auto;
-    background-color: #fdfffd;
+    background-color: #fff5fe;
 }
 
 img
 {
-    padding-left: 15px;
-    padding-right: 15px;
     width: 0px;
     height: auto;
-}
+}   
 
 @keyframes underline
 {
@@ -173,33 +181,29 @@ img
 }
 @font-face
 {
-    font-family: 'Qwigley';
-    src: url('Qwigley-Regular.ttf') format('truetype');
+    font-family: 'Cookie';
+    src: url('Cookie-Regular.ttf') format('truetype');
 }
 @font-face
 {
-    font-family: 'Marguerite';
-    src: url('Marguerite.ttf') format('truetype');
+    font-family: 'Georgia';
+    src: url('georgia.ttf') format('truetype');
 }
 
 /*smartphone*/
 @media (min-width: 576px) 
 {
-    .pdp
+    header
     {
-        font-size: 30px;
+        height: 140px;
     }
     h1
     {
-        font-size: 75px;
-    }
-    h2
-    {
-        font-size: 80px;
+        font: 55px 'Arial Bold';
     }
     span
     {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
@@ -210,21 +214,9 @@ img
     {
         font-size: 40px;
     }
-    header
-    {
-        height: 220px;
-    }
     h1
     {
         font-size: 95px;
-    }
-    h2
-    {
-        font-size: 100px;
-    }
-    h3
-    {
-        padding-top: 70px;
     }
     .platprix
     {
@@ -242,6 +234,10 @@ img
     {
         height: 60px;
     }
+    header
+    {
+        height: 220px;
+    }
     .icon-logo_omf-6
     {
         font-size: 100px;
@@ -254,23 +250,15 @@ img
     .pdp
     {
         font-size: 60px;
-    }
-    header
-    {
-        height: 260px;
+        margin-top: 15px;
     }
     h1
     {
-        font-size: 103px;
+        font: 103px 'Arial Bold';
     }
     h2
     {
-        padding-top: 160px;
-        font-size: 120px;
-    }
-    h3
-    {
-        padding-top: 130px;
+        padding-top: 190px;
     }
     .platprix
     {
@@ -282,22 +270,29 @@ img
     }
     footer
     {
-        height: 100px;
-    }
-    img
-    {
-        width: 250px;
-        height: 15px;
-        margin-top: 25px;
-    }
-    .left
-    {
-        margin-left: 90px;
+       height: 100px;
     }
     .miroir
     {
         transform: scaleX(-1);
-        margin-right: 90px;
+    }
+    header
+    {
+        height: 260px;
+    }
+    img
+    {
+        width: 250px;
+        height: 18px;
+        margin-top: 13px;
+    }
+    .left
+    {
+        margin-left: 55px;
+    }
+    .miroir
+    {
+        margin-right: 55px;
     }
     .icon-logo_omf-6
     {
@@ -311,10 +306,10 @@ img
     {
         content:"";
         position: absolute;
-        top: 185px;
-        left: 45%;
-        background: #41963c;
-        width: 120px;
+        top: 175px;
+        left: 33%;
+        background: #c67412;
+        width: 400px;
         height: 2px;
         transform: scaleX(0);
         transform-origin: left; 
@@ -328,10 +323,10 @@ img
     {
         content:"";
         position: absolute;
-        top: 185px;
-        left: 41%;
-        background: #41963c;
-        width: 210px;
+        top: 175px;
+        left: 37%;
+        background: #a56799;
+        width: 305px;
         height: 2px;
         transform: scaleX(0);
         transform-origin: left; 
@@ -345,10 +340,10 @@ img
     {
         content:"";
         position: absolute;
-        top: 185px;
-        left: 41%;
-        background: #41963c;
-        width: 225px;
+        top: 175px;
+        left: 35%;
+        background: #6e4ccc;
+        width: 360px;
         height: 2px;
         transform: scaleX(0);
         transform-origin: left; 
@@ -363,22 +358,19 @@ img
     {
         height: 300px;
     }
-    h2
-    {
-        font-size: 140px;
-    }
     img
     {
-        width: 394px;
-        height: 16px;
+        width: 336px;
+        height: 22px;
+        margin-top: 10px;
     }
     .left
     {
-        margin-left: 70px;
+        margin-left: 55px;
     }
     .miroir
     {
-        margin-right: 70px;
+        margin-right: 55px;
     }
     .icon-logo_omf-6
     {
