@@ -1,0 +1,253 @@
+/*Fonts*/
+@font-face
+{
+    font-family: 'Cookie';
+    src: url('../fonts/Cookie-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Georgia';
+    src: url('../fonts/georgia.ttf') format('truetype');
+}
+
+/*Animations*/
+@keyframes underline
+{
+    0%
+    {
+        transform: scaleX(0)
+    }
+    25%
+    {
+        transform: scaleX(.25)
+    }
+    50%
+    {
+        transform: scaleX(.5)
+    }
+    75%
+    {
+        transform: scaleX(.75)
+    }
+    100%
+    {
+        transform: scaleX(1)
+    }
+}
+   
+
+/*Balises Génériques*/
+h2 /*nom restaurant*/
+{
+    background: -webkit-linear-gradient(5deg, #c67412, #a56799, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cookie';
+    font-size: 80px;
+    font-weight: bold;
+    padding-top: 100px;
+    margin-top: 0px;
+    padding-bottom: 30px;  
+    margin-bottom: 0px;
+}
+
+h3 /*Entrées, plats, desserts*/
+{
+    font-family: 'Georgia';
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span
+{
+    font-family: 'Georgia';
+    font-size: 15px;
+    line-height: 25px;
+}
+
+img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
+{
+    width: 0px;
+    height: auto;
+}   
+
+/*Attributs spécifiques*/
+.restaurant
+{
+    text-align: center;
+}
+
+.entrée
+{
+    color: #c67412;
+}
+
+.plat
+{
+    color: #a56799;
+}
+
+.dessert
+{
+    padding-bottom: 50px;
+    color: #6e4ccc;
+}
+
+.platprix
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.bloc_menu
+{
+    max-width: 1190px;
+    margin: 0 auto;
+    background-color: #fff5fe;
+}
+
+
+
+
+/*smartphone*/
+@media (min-width: 576px) 
+{
+    span
+    {
+        font-size: 20px;
+    }
+}
+
+/*tablette*/
+@media (min-width: 768px) 
+{
+    .platprix
+    {
+        padding: 10px 10px;
+    }
+    .dessert
+    {
+        padding-bottom: 150px;
+    }
+    span
+    {
+        font-size: 25px;
+    }
+}
+
+/*grand écran*/
+@media (min-width: 992px) 
+{
+    h2
+    {
+        padding-top: 190px;
+    }
+    .platprix
+    {
+        padding: 10px 120px;
+    }
+    .dessert
+    {
+        padding-bottom: 300px;
+    }
+    .miroir
+    {
+        transform: scaleX(-1);
+        margin-right: 55px;
+    }
+    img
+    {
+        width: 250px;
+        height: 18px;
+        margin-top: 13px;
+    }
+    .left
+    {
+        margin-left: 55px;
+    }
+    .entrée
+    {
+        position: relative;
+    }
+    .entrée:hover .underline1
+    {
+        content:"";
+        position: absolute;
+        top: 175px;
+        left: 33%;
+        background: #c67412;
+        width: 400px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+    .plat
+    {
+        position: relative;
+    }
+    .plat:hover .underline2
+    {
+        content:"";
+        position: absolute;
+        top: 175px;
+        left: 37%;
+        background: #a56799;
+        width: 305px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+    .dessert
+    {
+        position: relative;
+    }
+    .dessert:hover .underline3
+    {
+        content:"";
+        position: absolute;
+        top: 175px;
+        left: 35%;
+        background: #6e4ccc;
+        width: 360px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+}
+
+/* Très grand écran */
+@media (min-width: 1200px) 
+{
+    img
+    {
+        width: 336px;
+        height: 22px;
+        margin-top: 10px;
+    }
+    .left
+    {
+        margin-left: 55px;
+    }
+    .miroir
+    {
+        margin-right: 55px;
+    }
+}

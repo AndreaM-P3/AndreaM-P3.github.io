@@ -1,0 +1,263 @@
+/*Fonts*/
+@font-face
+{
+    font-family: 'Allura';
+    src: url('../fonts/Allura-Regular.otf') format('opentype');
+}
+@font-face
+{
+    font-family: 'Action Man';
+    src: url('../fonts/Action_Man.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'journal';
+    src: url('../fonts/journal.ttf') format('truetype');
+}
+
+/*Animations*/
+@keyframes under
+{
+    0%
+    {
+        transform: scaleX(0)
+    }
+    25%
+    {
+        transform: scaleX(.25)
+    }
+    50%
+    {
+        transform: scaleX(.5)
+    }
+    75%
+    {
+        transform: scaleX(.75)
+    }
+    100%
+    {
+        transform: scaleX(1)
+    }
+}
+
+/*Balises Génériques*/
+h2 /*nom restaurant*/
+{
+    color: #3c1218;
+    font-family: 'Allura';
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 90px;  
+}
+
+h3 /*Entrées, plats, desserts*/
+{
+    font-family: 'Action Man';
+    font-size: 45px;
+    text-align: center;
+    color: #3c1218;
+    margin-top: 130px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span
+{
+    font-family: 'journal';
+    font-size: 22px;
+    color: #3c1218;
+    line-height: 25px;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
+{
+    width: 0;
+}
+
+/*Attributs Spécifiques*/
+.icone1 /*icone accolée au h2*/
+{
+    font-size: 120px;
+    padding-top: 80px;
+    background: -webkit-linear-gradient(45deg, #f15861, #f78f6a, #fcb977);
+    -webkit-background-clip: text; /*limite les couleurs de BG au texte*/
+    -webkit-text-fill-color: transparent; /*rend le texte transparent de façon à voir le dégradé du BG limité au texte*/
+}
+
+.icone2 /* icône de la conclu*/
+{
+    font-size: 65px;
+    background: -webkit-linear-gradient(45deg, #f15861, #f78f6a, #fcb977);
+    -webkit-background-clip: text; /*limite les couleurs de BG au texte*/
+    -webkit-text-fill-color: transparent; /*rend le texte transparent de façon à voir le dégradé du BG limité au texte*/
+}
+
+.restaurant /*alignement de l'icone et du texte*/
+{
+    text-align: center;
+}
+
+.restaurant2
+{
+    color: #3c1218;
+    font-family: 'Allura';
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;  
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.platprix
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.conclu
+{
+    padding-bottom: 60px;
+    padding-top: 80px;
+    color: #3c1218;
+    font-family: 'Allura';
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bloc_menu
+{
+    max-width: 1190px;
+    margin: 0 auto;
+    background-color: #fcdfdb;
+}
+
+/*smartphone*/
+@media (min-width: 576px) 
+{
+    span
+    {
+        font-size: 25px;
+    }
+}
+
+/*tablette*/
+@media (min-width: 768px) 
+{
+    .platprix
+    {
+        padding: 10px 10px;
+    }
+    span
+    {
+        font-size: 35px;
+    }
+    .conclu
+    {
+        padding-bottom: 160px;
+    }
+}
+
+/*grand écran*/
+@media (min-width: 992px) 
+{
+    .platprix
+    {
+        padding: 10px 120px;
+    }
+    .conclu
+    {
+        padding-bottom: 200px;
+    }
+    .left
+    {
+        margin-left: 35px;
+        margin-top: 25px;
+        width: 220px;
+    }
+    .right
+    {
+        margin-right: 35px;
+        margin-top: 25px;
+        width: 250px;
+    }
+    .entrée
+    {
+        position: relative
+    }
+    .entrée:hover .underline1
+    {
+        content:"";
+        position: absolute;
+        top: 60px;
+        left: 41%;
+        background: #3c1218;
+        width: 190px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: under 1000ms 150ms linear forwards;
+    }
+    .plat
+    {
+        position: relative
+    }
+    .plat:hover .underline2
+    {
+        content:"";
+        position: absolute;
+        top: 60px;
+        left: 37%;
+        background: #3c1218;
+        width: 286px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: under 1000ms 150ms linear forwards;
+    }
+    .dessert
+    {
+        position: relative
+    }
+    .dessert:hover .underline3
+    {
+        content:"";
+        position: absolute;
+        top: 60px;
+        left: 34%;
+        background: #3c1218;
+        width: 350px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: under 1000ms 150ms linear forwards;
+    }
+}
+
+/* Très grand écran */
+@media (min-width: 1200px) 
+{
+    .left
+    {
+        margin-left: 95px;
+        margin-top: 25px;
+    }
+    .right
+    {
+        margin-right: 95px;
+        margin-top: 25px;
+    }
+}

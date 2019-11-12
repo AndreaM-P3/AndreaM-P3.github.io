@@ -1,0 +1,95 @@
+/*Fonts*/
+@font-face
+{
+    font-family: 'Arial Bold';
+    src: url('arialbd.ttf') format('truetype');
+}
+
+/*Balises Génériques*/
+body
+{
+    max-width: 100%;
+}
+
+h2
+{
+    font-size: 25px;
+    font-family: 'Arial Bold'; 
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p
+{
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 25px;
+}
+
+mark
+{
+    background-color: white;
+    color: #579c87;
+}
+
+article
+{
+    margin: 0 30px;
+}
+
+/*Attributs Spécifiques*/
+.style
+{
+    color: #579c87;
+}
+
+/*smartphone*/
+@media (min-width: 576px) 
+{
+    h2
+    {
+        font-size: 25px;
+    }
+}
+
+/*tablette*/
+@media (min-width: 768px) 
+{
+    h2
+    {
+        font-size: 35px;
+    }
+    section
+    {
+        margin: 40px 60px;
+    }
+}
+
+/*grand écran*/
+@media (min-width: 992px) 
+{
+    h2
+    {
+        font-size: 50px;
+    }
+    section
+    {
+        margin: 60px 80px;
+    }
+}
+
+/* Très grand écran */
+@media (min-width: 1200px) 
+{
+    section
+    {
+        margin: 80px 100px;
+    }
+}

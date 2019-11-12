@@ -1,0 +1,295 @@
+/*Fonts*/
+@font-face
+{
+    font-family: 'Arial Bold';
+    src: url('../fonts/arialbd.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Allura';
+    src: url('../fonts/Allura-Regular.otf') format('opentype');
+}
+@font-face
+{
+    font-family: 'Action Man';
+    src: url('../fonts/Action_Man.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Cookie';
+    src: url('../fonts/Cookie-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Georgia';
+    src: url('../fonts/georgia.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Aguafina';
+    src: url('../fonts/AguafinaScript-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Marguerite';
+    src: url('../fonts/Marguerite.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Qwigley';
+    src: url('../fonts/Qwigley-Regular.ttf') format('truetype');
+}
+
+/*Animations*/
+@keyframes points
+{
+    0%
+    {
+        transform: translateY(0)
+    }
+    100%
+    {
+        transform: translateY(-10px)
+    }
+}
+
+/*Balises génériques*/
+body
+{
+    max-width: 100%;
+}
+
+section
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span
+{
+    font-family: Arial;
+    font-size: 30px;
+    color: #fdcb46;
+    padding-top: 10px;
+}
+
+/*Attributs spécifiques*/
+.icon-note-3 /*icone note enchantée*/
+{
+    font-size: 85px;
+    background: -webkit-linear-gradient(45deg, #f15861, #f78f6a, #fcb977);
+    -webkit-background-clip: text; /*limite les couleurs de BG au texte*/
+    -webkit-text-fill-color: transparent; /*rend le texte transparent de façon à voir le dégradé du BG limité au texte*/
+}
+
+.rest1
+{
+    color: #3c1218;
+    font-family: 'Allura';
+    font-size: 50px;
+    line-height: 1;
+}
+
+.menu1
+{
+    color: #3c1218;
+    font-family: 'Action Man';
+    font-size: 50px;
+}
+
+.fond1
+{
+    background-color: #fcdfdb;
+}
+
+.rest2
+{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Cookie';
+    background: -webkit-linear-gradient(35deg, #c67412, #a56799, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu2
+{
+    color: #c77412;
+    font-family: 'Georgia';
+    font-size: 55px;
+}
+
+.fond2
+{
+    background-color: #fff5fe ;
+}
+
+.rest3
+{
+    font-family: 'Aguafina';
+    font-size: 50px;
+    background: -webkit-linear-gradient(5deg, #0228dd, #0670f3, #229df9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu3
+{
+    color: #0887fb;
+    font-family: 'Marguerite';
+    font-size: 55px;
+}
+
+.fond3
+{
+    background-color: #f9f9f9 ;
+}
+
+.rest4
+{
+    font-family: 'Qwigley';
+    font-weight: bold;
+    font-size: 70px;
+    background: -webkit-linear-gradient(5deg, #3d9339, #bfff7e); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.menu4
+{
+    color: #3d9339;
+    font-family: 'Marguerite';
+    font-size: 55px;
+}
+
+.fond4
+{
+    background-color: #fdfffd ; 
+}
+
+.fond:hover
+{
+    transition: opacity 0.9s ease;
+}
+
+.zoom span {
+    transition: all 0.9s ease;
+}
+
+.zoom:hover span
+{
+    transform: scale(1.1);
+}
+
+.zoom:hover span.menu1
+{
+    padding-top: 20px;
+}
+
+.menu
+{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    box-shadow: 0px 0px 15px lightgrey;
+    opacity: 1;
+}
+
+.menu:hover, .menu:focus {
+    opacity: 0.5;
+}
+
+.next 
+{
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #579c87;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+ 
+}
+
+.suspens
+{
+    animation: points 700ms backwards infinite ease-in-out alternate;
+}
+
+.pt1
+{
+    animation-delay: 200ms;
+}
+
+.pt2
+{
+    animation-delay: 400ms;
+}
+
+.pt3
+{
+    animation-delay: 600ms;
+}
+
+
+/*smartphone*/
+@media (min-width: 576px) 
+{
+    span
+    {
+        font-size: 35px;
+    }
+    .next
+    {
+        width: 400px;
+        height: 60px;
+    }
+}
+
+/*tablette*/
+@media (min-width: 768px) 
+{
+    section
+    {
+        flex-direction: row;
+    }
+    .menu
+    {
+        height: 760px;
+        width: 540px;
+    }
+    .next
+    {
+        margin-bottom: 80px;
+    }
+}
+
+/*grand écran*/
+@media (min-width: 992px) 
+{
+    span
+    {
+        font-size: 60px;
+    }
+    .next
+    {
+        width: 550px;
+        height: 100px;
+        margin-bottom: 120px;
+    }
+}

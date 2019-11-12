@@ -1,0 +1,262 @@
+/*Fonts*/
+@font-face
+{
+    font-family: 'Qwigley';
+    src: url('../fonts/Qwigley-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Marguerite';
+    src: url('../fonts/Marguerite.ttf') format('truetype');
+}
+
+/*Animations*/
+@keyframes underline
+{
+    0%
+    {
+        transform: scaleX(0)
+    }
+    25%
+    {
+        transform: scaleX(.25)
+    }
+    50%
+    {
+        transform: scaleX(.5)
+    }
+    75%
+    {
+        transform: scaleX(.75)
+    }
+    100%
+    {
+        transform: scaleX(1)
+    }
+}
+
+/*Balises Génériques*/
+h2 /*nom restaurant*/
+{
+    background: -webkit-linear-gradient(5deg, #3d923a, #99e06b, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Qwigley';
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 50px;
+    margin-top: 0px;
+    padding-bottom: 10px;  
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+h3 /*Entrées, plats, desserts*/
+{
+    font-family: 'Marguerite';
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 60px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span
+{
+    font-family: 'Marguerite';
+    font-size: 18px;
+    line-height: 25px;
+}
+
+img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 0px;
+    height: auto;
+}
+
+/*Attributs Spécifiques*/
+.restaurant
+{
+    text-align: center;
+}
+
+.dessert
+{
+    padding-bottom: 50px;
+}
+
+.platprix
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.bloc_menu
+{
+    max-width: 1190px;
+    margin: 0 auto;
+    background-color: #fdfffd;
+}
+   
+/*smartphone*/
+@media (min-width: 576px) 
+{
+    h2
+    {
+        font-size: 80px;
+    }
+    span
+    {
+        font-size: 15px;
+    }
+}
+
+/*tablette*/
+@media (min-width: 768px) 
+{
+    h2
+    {
+        font-size: 100px;
+    }
+    h3
+    {
+        padding-top: 70px;
+    }
+    span
+    {
+        font-size: 25px;
+    }
+    .platprix
+    {
+        padding: 10px 10px;
+    }
+    .dessert
+    {
+        padding-bottom: 150px;
+    }
+}
+
+/*grand écran*/
+@media (min-width: 992px) 
+{
+    h2
+    {
+        padding-top: 160px;
+        font-size: 120px;
+    }
+    h3
+    {
+        padding-top: 130px;
+    }
+    img
+    {
+        width: 250px;
+        height: 15px;
+        margin-top: 25px;
+    }
+    .platprix
+    {
+        padding: 10px 120px;
+    }
+    .dessert
+    {
+        padding-bottom: 300px;
+    }
+    .left
+    {
+        margin-left: 90px;
+    }
+    .miroir
+    {
+        transform: scaleX(-1);
+        margin-right: 90px;
+    }
+    .entrée
+    {
+        position: relative;
+    }
+    .entrée:hover .underline1
+    {
+        content:"";
+        position: absolute;
+        top: 185px;
+        left: 45%;
+        background: #41963c;
+        width: 120px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+    .plat
+    {
+        position: relative;
+    }
+    .plat:hover .underline2
+    {
+        content:"";
+        position: absolute;
+        top: 185px;
+        left: 41%;
+        background: #41963c;
+        width: 210px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+    .dessert
+    {
+        position: relative;
+    }
+    .dessert:hover .underline3
+    {
+        content:"";
+        position: absolute;
+        top: 185px;
+        left: 41%;
+        background: #41963c;
+        width: 225px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+}
+
+/* Très grand écran */
+@media (min-width: 1200px) 
+{
+    h2
+    {
+        font-size: 140px;
+    }
+    img
+    {
+        width: 394px;
+        height: 16px;
+    }
+    .left
+    {
+        margin-left: 70px;
+    }
+    .miroir
+    {
+        margin-right: 70px;
+    }
+}
