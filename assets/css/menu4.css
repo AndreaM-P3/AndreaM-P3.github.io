@@ -237,57 +237,6 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
         transform-origin: left; 
         animation: underline 1000ms 150ms linear forwards;
     }
-    .entrée
-    {
-        position: relative;
-    }
-    .entrée:hover .underline1
-    {
-        content:"";
-        position: absolute;
-        top: 185px;
-        left: 45%;
-        background: #41963c;
-        width: 120px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms both ;
-    }
-    .plat
-    {
-        position: relative;
-    }
-    .plat:hover .underline2
-    {
-        content:"";
-        position: absolute;
-        top: 185px;
-        left: 41%;
-        background: #41963c;
-        width: 210px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms both ;
-    }
-    .dessert
-    {
-        position: relative;
-    }
-    .dessert:hover .underline3
-    {
-        content:"";
-        position: absolute;
-        top: 185px;
-        left: 41%;
-        background: #41963c;
-        width: 225px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms both ;
-    }
 }
 
 /* Très grand écran */

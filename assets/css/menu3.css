@@ -232,57 +232,6 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
         transform-origin: left; 
         animation: underline 1000ms 150ms linear forwards;
     }
-    .entrée
-    {
-        position: relative;
-    }
-    .entrée:hover .underline1
-    {
-        content:"";
-        position: absolute;
-        top: 185px;
-        left: 40%;
-        background: #0228dd;
-        width: 245px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms both ;
-    }
-    .plat
-    {
-        position: relative;
-    }
-    .plat:hover .underline2
-    {
-        content:"";
-        position: absolute;
-        top: 185px;
-        left: 41%;
-        background: #0670f3;
-        width: 220px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms both ;
-    }
-    .dessert
-    {
-        position: relative;
-    }
-    .dessert:hover .underline3
-    {
-        content:"";
-        position: absolute;
-        top: 185px;
-        left: 41%;
-        background: #229df9;
-        width: 220px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms both ;
-    }
 }
 
 /* Très grand écran */
