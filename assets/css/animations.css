@@ -1,0 +1,120 @@
+/*animation mentions légales et contact au survol*/
+@keyframes wiggle
+{
+    25%
+    {
+        transform: translateX(1%);
+    }
+
+    75%
+    {
+        transform: translateX(-1%);
+    }
+}
+
+.pdp:hover
+{
+    animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9);
+    animation-iteration-count: 2;
+}
+
+/*animation point de suspension de la <section class="next"> prochainement*/ 
+@keyframes points
+{
+    0%
+    {
+        transform: translateY(0)
+    }
+    100%
+    {
+        transform: translateY(-10px)
+    }
+}
+
+.suspens
+{
+    animation: points 700ms backwards infinite ease-in-out alternate;
+}
+
+.pt1
+{
+    animation-delay: 200ms;
+}
+
+.pt2
+{
+    animation-delay: 400ms;
+}
+
+.pt3
+{
+    animation-delay: 600ms;
+}
+
+/*animation entrée/plat/dessert, le titre de l'article <h3> se souligne au survol*/
+@keyframes underline
+{
+    0%
+    {
+        transform: scaleX(0)
+    }
+    25%
+    {
+        transform: scaleX(.25)
+    }
+    50%
+    {
+        transform: scaleX(.5)
+    }
+    75%
+    {
+        transform: scaleX(.75)
+    }
+    100%
+    {
+        transform: scaleX(1)
+    }
+}
+
+@media (min-width: 992px) 
+{.entrée
+    {
+        position: relative;
+    }
+    .entrée:hover .underline1
+    {
+        content:"";
+        position: absolute;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+    .plat
+    {
+        position: relative;
+    }
+    .plat:hover .underline2
+    {
+        content:"";
+        position: absolute;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+    .dessert
+    {
+        position: relative;
+    }
+    .dessert:hover .underline3
+    {
+        content:"";
+        position: absolute;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: underline 1000ms 150ms linear forwards;
+    }
+}
+
