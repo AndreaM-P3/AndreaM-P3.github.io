@@ -1,40 +1,3 @@
-/*Fonts*/
-@font-face
-{
-    font-family: 'Aguafina';
-    src: url('../fonts/AguafinaScript-Regular.ttf') format('truetype');
-}
-@font-face
-{
-    font-family: 'Marguerite';
-    src: url('../fonts/Marguerite.ttf') format('truetype');
-}
-
-/*Animations*/
-@keyframes underline
-{
-    0%
-    {
-        transform: scaleX(0)
-    }
-    25%
-    {
-        transform: scaleX(.25)
-    }
-    50%
-    {
-        transform: scaleX(.5)
-    }
-    75%
-    {
-        transform: scaleX(.75)
-    }
-    100%
-    {
-        transform: scaleX(1)
-    }
-}
-
 /*Balises Génériques*/
 h2 /*nom restaurant*/
 {
@@ -181,56 +144,26 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
     {
         margin-left: 80px;
     }
-    .entrée
-    {
-        position: relative;
-    }
     .entrée:hover .underline1
     {
-        content:"";
-        position: absolute;
         top: 185px;
         left: 40%;
         background: #0228dd;
         width: 245px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms linear forwards;
-    }
-    .plat
-    {
-        position: relative;
     }
     .plat:hover .underline2
     {
-        content:"";
-        position: absolute;
         top: 185px;
         left: 41%;
         background: #0670f3;
         width: 220px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms linear forwards;
-    }
-    .dessert
-    {
-        position: relative;
     }
     .dessert:hover .underline3
     {
-        content:"";
-        position: absolute;
         top: 185px;
         left: 41%;
         background: #229df9;
         width: 220px;
-        height: 2px;
-        transform: scaleX(0);
-        transform-origin: left; 
-        animation: underline 1000ms 150ms linear forwards;
     }
 }
 

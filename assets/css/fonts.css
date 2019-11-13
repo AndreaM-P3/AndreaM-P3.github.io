@@ -1,0 +1,53 @@
+@font-face
+{
+    font-family: 'Arial Bold';
+    src: url('../fonts/arialbd.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Allura';
+    src: url('../fonts/Allura-Regular.otf') format('opentype');
+}
+
+@font-face
+{
+    font-family: 'Action Man';
+    src: url('../fonts/Action_Man.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Cookie';
+    src: url('../fonts/Cookie-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Georgia';
+    src: url('../fonts/georgia.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Aguafina';
+    src: url('../fonts/AguafinaScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Marguerite';
+    src: url('../fonts/Marguerite.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Qwigley';
+    src: url('../fonts/Qwigley-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'journal';
+    src: url('../fonts/journal.ttf') format('truetype');
+}
