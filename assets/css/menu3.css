@@ -121,6 +121,12 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
     {
         padding-top: 130px;
     }
+    img
+    {
+        width: 250px;
+        height: 17px;
+        margin-top: 20px;
+    }
     .platprix
     {
         padding: 10px 120px;
@@ -128,12 +134,6 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
     .dessert
     {
         padding-bottom: 300px;
-    }
-    img
-    {
-        width: 250px;
-        height: 17px;
-        margin-top: 20px;
     }
     .miroir
     {

@@ -98,6 +98,10 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
 /*tablette*/
 @media (min-width: 768px) 
 {
+    span
+    {
+        font-size: 25px;
+    }
     .platprix
     {
         padding: 10px 10px;
@@ -105,10 +109,6 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
     .dessert
     {
         padding-bottom: 150px;
-    }
-    span
-    {
-        font-size: 25px;
     }
 }
 
@@ -118,6 +118,12 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
     h2
     {
         padding-top: 190px;
+    }
+    img
+    {
+        width: 250px;
+        height: 18px;
+        margin-top: 13px;
     }
     .platprix
     {
@@ -131,12 +137,6 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
     {
         transform: scaleX(-1);
         margin-right: 55px;
-    }
-    img
-    {
-        width: 250px;
-        height: 18px;
-        margin-top: 13px;
     }
     .left
     {

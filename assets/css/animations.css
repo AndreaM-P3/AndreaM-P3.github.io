@@ -1,3 +1,27 @@
+/*transition des menus de la page accueil : zoom + opacité réduite*/
+.fond:hover
+{
+    transition: opacity 0.9s ease;
+}
+
+.zoom span {
+    transition: all 0.9s ease;
+}
+
+.zoom:hover span
+{
+    transform: scale(1.1);
+}
+
+.zoom:hover span.menu1
+{
+    padding-top: 20px;
+}
+
+.menu:hover, .menu:focus {
+    opacity: 0.5;
+}
+
 /*animation mentions légales et contact au survol*/
 @keyframes wiggle
 {

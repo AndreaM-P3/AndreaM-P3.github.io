@@ -115,15 +115,15 @@ img /*fait disparaitre les images décoratives en mode smartphone + tablette*/
 /*tablette*/
 @media (min-width: 768px) 
 {
-    .platprix
-    {
-        padding: 10px 10px;
-    }
     span
     {
         font-size: 35px;
     }
-    .conclu
+    .platprix
+    {
+        padding: 10px 10px;
+    }
+        .conclu
     {
         padding-bottom: 160px;
     }
