@@ -47,32 +47,34 @@
 {
     0%
     {
-        transform: translateY(0)
+        opacity: 0;
     }
     100%
     {
-        transform: translateY(-10px)
+        opacity: 1;
     }
 }
 
 .suspens
 {
     animation: points 700ms backwards infinite ease-in-out alternate;
+    transform-origin: left;
+    transform: opacity(0);
 }
 
 .pt1
 {
-    animation-delay: 200ms;
+    animation-delay: 100ms;
 }
 
 .pt2
 {
-    animation-delay: 400ms;
+    animation-delay: 300ms;
 }
 
 .pt3
 {
-    animation-delay: 600ms;
+    animation-delay: 500ms;
 }
 
 /*animation entrée/plat/dessert, le titre de l'article <h3> se souligne au survol*/
